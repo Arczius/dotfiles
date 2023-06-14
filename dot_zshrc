@@ -27,5 +27,8 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-en
 
+# binding the editor to NeoVim
+export EDITOR = nvim
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
