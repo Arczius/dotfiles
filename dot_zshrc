@@ -1,6 +1,14 @@
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
+# Required for the theme
+typeset -A __Prompt
+
+__Prompt[ITALIC_ON]=$'\e[3m'
+__Prompt[ITALIC_OFF]=$'\e[23m'
+
+plug "zap-zsh/singularisart-prompt"
+
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
