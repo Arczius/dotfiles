@@ -16,6 +16,7 @@ plug "MichaelAquilina/zsh-you-should-use"
 
 # Autocompletion / suggestions
 plug "marlonrichert/zsh-autocomplete"
+plug "greymd/docker-zsh-completion"
 plug "zsh-users/zsh-autosuggestions"
 
 # Load and initialise completion system
@@ -32,3 +33,6 @@ zstyle ':completion:::::default' menu yes select
 
 # binding the editor to NeoVim
 export EDITOR=nvim
+
+# aliassing sail so i can properly use it
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
