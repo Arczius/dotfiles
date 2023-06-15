@@ -32,8 +32,13 @@ bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-en
 zstyle ':completion:::::default' menu yes select
 
-# binding the editor to NeoVim
+# binding the editor to LunarVim
 export EDITOR=lvim
 
 # aliassing sail so i can properly use it
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
