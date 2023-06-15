@@ -42,3 +42,8 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# Loading a random pokemon on startup
+if type "pokemon-colorscripts" > /dev/null; then
+  pokemon-colorscripts --random --no-title
+fi
