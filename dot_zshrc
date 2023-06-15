@@ -15,9 +15,10 @@ plug "zap-zsh/supercharge"
 plug "MichaelAquilina/zsh-you-should-use"
 
 # Autocompletion / suggestions
+plug "zsh-users/zsh-autosuggestions"
 plug "marlonrichert/zsh-autocomplete"
 plug "greymd/docker-zsh-completion"
-plug "zsh-users/zsh-autosuggestions"
+plug "vasyharan/zsh-brew-services"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -32,7 +33,7 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-en
 zstyle ':completion:::::default' menu yes select
 
 # binding the editor to NeoVim
-export EDITOR=nvim
+export EDITOR=lvim
 
 # aliassing sail so i can properly use it
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
