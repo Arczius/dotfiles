@@ -45,5 +45,5 @@ export PATH="$PNPM_HOME:$PATH"
 
 # Loading a random pokemon on startup
 if type "pokemon-colorscripts" > /dev/null; then
-  pokemon-colorscripts --random --no-title
+  pokemon-colorscripts --random 1,2,3,4,5 --no-title
 fi
