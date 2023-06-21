@@ -4,12 +4,23 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 lvim.plugins = {
-  -- colorschemes
-  {"rose-pine/neovim", name = "rose-pine"},
+  -- scrollbar
+  { "petertriho/nvim-scrollbar" },
 
-  -- other
-  {"alec-gibson/nvim-tetris"}
+  -- color code colorization
+  { "NvChad/nvim-colorizer.lua" },
+
+  -- colorschemes
+  { "rose-pine/neovim", name = "rose-pine" },
+
+  -- games
+  { "alec-gibson/nvim-tetris" },
+  { "seandewar/nvimesweeper" }
 }
+
+-- setting up dependencies
+require('scrollbar').setup()
+require 'colorizer'.setup()
 
 lvim.colorscheme = "rose-pine-moon"
 lvim.transparent_window = true
