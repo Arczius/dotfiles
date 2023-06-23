@@ -20,6 +20,9 @@ plug "marlonrichert/zsh-autocomplete"
 plug "greymd/docker-zsh-completion"
 plug "vasyharan/zsh-brew-services"
 
+# sudo for zsh
+plug "zap-zsh/sudo"
+
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
