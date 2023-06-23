@@ -1,5 +1,16 @@
 # Created by Zap installer
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+
+# checking if zap.zsh exists, otherwise installing it
+if [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ]
+
+  then
+    [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+
+  # installing zap.zsh
+  else
+    git clone -b "master" https://github.com/zap-zsh/zap.git "${XDG_DATA_HOME:=$HOME/.local/share}/zap" > /dev/null 
+    source "$HOME/.zshrc"
+fi
 
 # Required for the theme
 typeset -A __Prompt
