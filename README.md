@@ -6,3 +6,4 @@ depends on:
 - [neovim](https://github.com/neovim/neovim)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [fzf](https://github.com/junegunn/fzf)
+- [wezterm](https://github.com/wez/wezterm)
