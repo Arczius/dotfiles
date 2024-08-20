@@ -1,1 +1,5 @@
-/home/jar/.config/nvim/init.lua
+require("config.lazy")
+require("config.keys")
+require("config.misc")
+require("config.line")
+require("config.lsp")
